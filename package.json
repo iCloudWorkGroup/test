@@ -1,22 +1,15 @@
 {
-  "name": "codecov-example-node",
+  "name": "example-node",
   "version": "0.0.1",
-  "description": "Codeocv Example Node",
   "main": "script.js",
   "scripts": {
-    "test": "istanbul cover node_modules/mocha/bin/_mocha && codecov"
+    "test":"istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/codecov/example-node.git"
-  },
-  "author": "Codecov <hello@codecov.io>",
-  "license": "MIT",
   "dependencies": {},
   "devDependencies": {
     "expect.js": "^0.3.1",
-    "mocha": "^2.1.0",
     "istanbul": "^0.3.2",
-    "codecov": "^1.0.0"
+    "mocha": "^2.1.0",
+    "mocha-lcov-reporter": "^1.3.0"
   }
 }
