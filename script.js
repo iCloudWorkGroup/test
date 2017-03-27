@@ -10,6 +10,9 @@ function math(a){
     } else {
         return false;
     }
+    if(b === 1){
+	return 'x'
+    }
 }
 
 exports.math = math;

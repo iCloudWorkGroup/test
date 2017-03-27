@@ -3,3 +3,9 @@ node_js:
   - "4.6.0"
 install:
   - npm install
+script:
+  - npm test
+cache:
+    bundler: true
+    directories:
+    - node_modules
