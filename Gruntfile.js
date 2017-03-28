@@ -28,13 +28,12 @@ module.exports = function(grunt) {
         },
         build: {
             options: {
-                banner: '/*! Spreadsheet <%= pkg.version %> */\n'
+                banner: '/*! fengniao <%= pkg.version %> */\n'
             },
 
             all: {
-                name: 'spreadsheet/spreadsheet',
-                dest: 'dist/fengniao.js',
-
+                name: 'script',
+                dest: 'dist/fn.js',
                 // 在没有jquery类似的库的前提下可以设置builtin,去除强行依赖。
                 builtin: {
                     dollar: false,
@@ -42,11 +41,21 @@ module.exports = function(grunt) {
                 }
             }
         },
+	uglify:{
+	    options:{
+	        report:"gzip"
+	    },
+	    my_target:{
+		files:{
+		    "dist/fn.min.js":["dist/fn.js"]
+		}
+	    }
+	},
 	bump: {
 	    options: {
 		updateConfigs: ['pkg'],
 		commitFIles:['package.json', 'CHANGELOG.md'],
-		commitMessage: 'spreadsheet: release v%VERSION%'
+		commitMessage: 'release: v%VERSION%'
 	    }
 	},
 	conventionalChangelog: {
@@ -81,7 +90,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-conventional-changelog');
 
     grunt.registerTask('check', ['jshint']);
-    grunt.registerTask('dist', ['build']);
+    grunt.registerTask('dist', ['build','uglify']);
     grunt.registerTask('default', ['jshint', 'build']);
     grunt.registerTask('css', ['less']);
     grunt.registerTask('release','build new version info',function(type){
