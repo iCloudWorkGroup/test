@@ -89,9 +89,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-conventional-changelog');
 
-    grunt.registerTask('check', ['jshint']);
+    grunt.registerTask('format', ['jshint']);
     grunt.registerTask('dist', ['build','uglify']);
-    grunt.registerTask('default', ['jshint', 'build']);
+    grunt.registerTask('default', ['format','dist']);
     grunt.registerTask('css', ['less']);
     grunt.registerTask('release','build new version info',function(type){
 	grunt.task.run([
