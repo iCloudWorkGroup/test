@@ -1,3 +1,14 @@
+<a name="0.0.16"></a>
+## [0.0.16](https://github.com/iCloudWorkGroup/test/compare/v0.0.15...v0.0.16) (2017-04-06)
+
+
+### Bug Fixes
+
+* **locaition:** short ([74f43c2](https://github.com/iCloudWorkGroup/test/commit/74f43c2)), closes [#33](https://github.com/iCloudWorkGroup/test/issues/33)
+* **short:** longer ([394e80a](https://github.com/iCloudWorkGroup/test/commit/394e80a))
+
+
+
 <a name="0.0.15"></a>
 ## [0.0.15](https://github.com/iCloudWorkGroup/test/compare/v0.0.14...v0.0.15) (2017-04-06)
 
