@@ -55,7 +55,8 @@ module.exports = function(grunt) {
 	    options: {
 		updateConfigs: ['pkg'],
 		commitFIles:['package.json', 'CHANGELOG.md'],
-		commitMessage: 'release: v%VERSION%'
+		commitMessage: 'release: v%VERSION%',
+		push: false
 	    }
 	},
 	conventionalChangelog: {
