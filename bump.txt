@@ -3,4 +3,7 @@ four
 three
 five
 pull request agaion
+<<<<<<< HEAD
 bump
+=======
+>>>>>>> 6299b235fc1a66496066f23119a0b6e315d9fc6a
