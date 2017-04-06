@@ -54,7 +54,7 @@ module.exports = function(grunt) {
 	bump: {
 	    options: {
 		updateConfigs: ['pkg'],
-		commitFIles:['package.json', 'CHANGELOG.md'],
+		commitFiles:['package.json', 'CHANGELOG.md'],
 		commitMessage: 'release: v%VERSION%',
 		push: false
 	    }
