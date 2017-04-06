@@ -1,3 +1,16 @@
+<a name="0.0.12"></a>
+## [0.0.12](https://github.com/iCloudWorkGroup/test/compare/v0.0.11...v0.0.12) (2017-04-06)
+
+
+### Bug Fixes
+
+* **browser:** short ([460709d](https://github.com/iCloudWorkGroup/test/commit/460709d))
+* **etc:** short ([e1793dd](https://github.com/iCloudWorkGroup/test/commit/e1793dd))
+* **location:** short ([1a86c15](https://github.com/iCloudWorkGroup/test/commit/1a86c15))
+* **location:** short ([2815172](https://github.com/iCloudWorkGroup/test/commit/2815172))
+
+
+
 <a name="0.0.11"></a>
 ## [0.0.11](https://github.com/iCloudWorkGroup/test/compare/v0.0.10...v0.0.11) (2017-04-06)
 
