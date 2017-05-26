@@ -1,4 +1,0 @@
-q
-t
-ddfsdf
-test-pull one
